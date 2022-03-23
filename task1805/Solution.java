@@ -16,12 +16,8 @@ public class Solution {
         String filename = reader.readLine();
         FileInputStream inputStream = new FileInputStream(filename);
 
-        // массив из 256, заполняем его нулями.  когда считываем символ из файла, то инкрементируется соответсвующий элемент
+        // массив из 256, при создании он заполнен нулями.  когда считываем символ из файла, то инкрементируется соответсвующий элемент
         int []array = new int[256];
-
-        for(int i = 0; i < 256; i++){
-            array[i] = 0;
-        }
 
         while (inputStream.available() > 0) //пока остались непрочитанные байты
         {
