@@ -27,7 +27,7 @@ public class Solution {
         inputStream.close(); // закрываем поток
 
         for (int i = 0; i < 256; i++) {
-            if (!(array[i] == 0)) { // если элемент не нулевой, значит печатаем его индекс
+            if (array[i] != 0) { // если элемент не нулевой, значит печатаем его индекс
                 System.out.print(i + " "); //
             }
         }
